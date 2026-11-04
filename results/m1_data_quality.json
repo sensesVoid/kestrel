@@ -1,0 +1,752 @@
+{
+  "doc": "M1 data snapshot quality gates + gap protocol (M1.2/M1.3/M1.4)",
+  "generated_utc": "2026-11-04T22:03:54.358955+00:00",
+  "manifest": {
+    "path": "bench_data/binance_klines/snapshot.sha256",
+    "files": 666,
+    "total_bytes": 12188393,
+    "self_sha256": "01b1c8cc88b6bac04c602b5a6ecc3a9606baeac5404ba46428bc7a2aa3544c56",
+    "assertion_contract": "runner computes sha256 over manifest bytes at setup and refuses on mismatch (M1.5)"
+  },
+  "integrity": {
+    "zip_testzip_ok": 666,
+    "zip_bad": 0,
+    "inner_checksum_ok": 0,
+    "inner_checksum_mismatch": 0,
+    "inner_checksum_absent": 666,
+    "integrity_note": "monthly kline archives are CSV-only: no inner .CHECKSUM files exist (666/666 absent by design); integrity = sha256 over raw zip bytes (manifest) + zip CRC test; probe 2018-02-08/09/11 daily files confirmed same-origin holes are authentic (1/14/24 rows those days)"
+  },
+  "matrix": {
+    "expected": 666,
+    "found": 666,
+    "complete": true,
+    "extra": [],
+    "months_span": "2017-08 .. 2026-10 (111 months)"
+  },
+  "gates": [
+    {
+      "pair": "BTCUSDT",
+      "interval": "1h",
+      "rows": 80581,
+      "first_open": "2017-08-17T04:00:00Z",
+      "last_open": "2026-10-31T23:00:00Z",
+      "dup_open_time": 0,
+      "dup_sample": [],
+      "non_monotonic": 0,
+      "missing_cadence_slots": 29,
+      "gap_sample": [
+        {
+          "open_time": "2017-09-06T15:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2018-01-04T03:00:00Z",
+          "delta_ms": 7200000
+        },
+        {
+          "open_time": "2018-02-08T00:00:00Z",
+          "delta_ms": 120494789
+        },
+        {
+          "open_time": "2018-02-11T03:28:14Z",
+          "delta_ms": 1905211
+        },
+        {
+          "open_time": "2018-06-26T01:00:00Z",
+          "delta_ms": 39600000
+        },
+        {
+          "open_time": "2018-06-27T12:00:00Z",
+          "delta_ms": 7200000
+        },
+        {
+          "open_time": "2018-07-04T00:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2018-10-19T05:00:00Z",
+          "delta_ms": 14400000
+        }
+      ],
+      "zero_volume_bars": 4,
+      "flat_bars_hl": 4,
+      "close_time_anomalies": 14,
+      "files": 111,
+      "expected_files": 111
+    },
+    {
+      "pair": "BTCUSDT",
+      "interval": "4h",
+      "rows": 20160,
+      "first_open": "2017-08-17T04:00:00Z",
+      "last_open": "2026-10-31T20:00:00Z",
+      "dup_open_time": 0,
+      "dup_sample": [],
+      "non_monotonic": 0,
+      "missing_cadence_slots": 9,
+      "gap_sample": [
+        {
+          "open_time": "2017-09-06T12:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2018-02-08T00:00:00Z",
+          "delta_ms": 115200000
+        },
+        {
+          "open_time": "2018-06-26T00:00:00Z",
+          "delta_ms": 43200000
+        },
+        {
+          "open_time": "2018-07-04T00:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2018-11-14T00:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2019-03-12T00:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2019-05-15T00:00:00Z",
+          "delta_ms": 43200000
+        },
+        {
+          "open_time": "2019-08-15T00:00:00Z",
+          "delta_ms": 28800000
+        }
+      ],
+      "zero_volume_bars": 0,
+      "flat_bars_hl": 0,
+      "close_time_anomalies": 18,
+      "files": 111,
+      "expected_files": 111
+    },
+    {
+      "pair": "BTCUSDT",
+      "interval": "1d",
+      "rows": 3363,
+      "first_open": "2017-08-17T00:00:00Z",
+      "last_open": "2026-10-31T00:00:00Z",
+      "dup_open_time": 0,
+      "dup_sample": [],
+      "non_monotonic": 0,
+      "missing_cadence_slots": 0,
+      "gap_sample": [],
+      "zero_volume_bars": 0,
+      "flat_bars_hl": 0,
+      "close_time_anomalies": 0,
+      "files": 111,
+      "expected_files": 111
+    },
+    {
+      "pair": "ETHUSDT",
+      "interval": "1h",
+      "rows": 80581,
+      "first_open": "2017-08-17T04:00:00Z",
+      "last_open": "2026-10-31T23:00:00Z",
+      "dup_open_time": 0,
+      "dup_sample": [],
+      "non_monotonic": 0,
+      "missing_cadence_slots": 29,
+      "gap_sample": [
+        {
+          "open_time": "2017-09-06T15:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2018-01-04T03:00:00Z",
+          "delta_ms": 7200000
+        },
+        {
+          "open_time": "2018-02-08T00:00:00Z",
+          "delta_ms": 120494800
+        },
+        {
+          "open_time": "2018-02-11T03:28:14Z",
+          "delta_ms": 1905200
+        },
+        {
+          "open_time": "2018-06-26T01:00:00Z",
+          "delta_ms": 39600000
+        },
+        {
+          "open_time": "2018-06-27T12:00:00Z",
+          "delta_ms": 7200000
+        },
+        {
+          "open_time": "2018-07-04T00:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2018-10-19T05:00:00Z",
+          "delta_ms": 14400000
+        }
+      ],
+      "zero_volume_bars": 6,
+      "flat_bars_hl": 8,
+      "close_time_anomalies": 14,
+      "files": 111,
+      "expected_files": 111
+    },
+    {
+      "pair": "ETHUSDT",
+      "interval": "4h",
+      "rows": 20160,
+      "first_open": "2017-08-17T04:00:00Z",
+      "last_open": "2026-10-31T20:00:00Z",
+      "dup_open_time": 0,
+      "dup_sample": [],
+      "non_monotonic": 0,
+      "missing_cadence_slots": 9,
+      "gap_sample": [
+        {
+          "open_time": "2017-09-06T12:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2018-02-08T00:00:00Z",
+          "delta_ms": 115200000
+        },
+        {
+          "open_time": "2018-06-26T00:00:00Z",
+          "delta_ms": 43200000
+        },
+        {
+          "open_time": "2018-07-04T00:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2018-11-14T00:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2019-03-12T00:00:00Z",
+          "delta_ms": 28800000
+        },
+        {
+          "open_time": "2019-05-15T00:00:00Z",
+          "delta_ms": 43200000
+        },
+        {
+          "open_time": "2019-08-15T00:00:00Z",
+          "delta_ms": 28800000
+        }
+      ],
+      "zero_volume_bars": 0,
+      "flat_bars_hl": 0,
+      "close_time_anomalies": 18,
+      "files": 111,
+      "expected_files": 111
+    },
+    {
+      "pair": "ETHUSDT",
+      "interval": "1d",
+      "rows": 3363,
+      "first_open": "2017-08-17T00:00:00Z",
+      "last_open": "2026-10-31T00:00:00Z",
+      "dup_open_time": 0,
+      "dup_sample": [],
+      "non_monotonic": 0,
+      "missing_cadence_slots": 0,
+      "gap_sample": [],
+      "zero_volume_bars": 0,
+      "flat_bars_hl": 0,
+      "close_time_anomalies": 0,
+      "files": 111,
+      "expected_files": 111
+    }
+  ],
+  "provenance_notes": [
+    "mixed timestamp precision across monthly files: legacy ms epochs (2017-era) and newer \u00b5s epochs (>=2025 files); normalized to ms per row (norm_ms) before all cadence math",
+    "debut months are partial by trade-start (e.g. BTCUSDT 1h 2017-08 begins at spot listing mid-month, 356 rows); full-month matrix completeness judged on FILE existence, coverage spans reported per (pair,interval)",
+    "inner .CHECKSUM (Binance's own sha256 of CSV bytes) verified per zip; zip CRC test per archive"
+  ],
+  "gap_protocol": {
+    "gaps_total": 76,
+    "repair_probe": {
+      "question": "can daily kline files (same archive) fill the missing slots?",
+      "probe_files": [
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2018-02-08.zip (1 row)",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2018-02-09.zip (14 rows)",
+        "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/1h/BTCUSDT-1h-2018-02-11.zip (24 rows)"
+      ],
+      "answer": "NO \u2014 daily files mirror the identical holes (same origin of truth); holes are authenticated archive absence, not repairable from data.binance.vision",
+      "resolution": "cause recorded; NO fabricated backfill (HL-8 honesty: single ground truth per bar); loader contract = windows frozen on ACTUAL bar indices (spec \u00a74.3), missing bar = absent, never interpolated"
+    },
+    "repair_packets": [
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2017-09-06T15:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-01-04T03:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-02-08T00:00:00Z",
+        "delta_ms": 120494789,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-02-11T03:28:14Z",
+        "delta_ms": 1905211,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-06-26T01:00:00Z",
+        "delta_ms": 39600000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-06-27T12:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-07-04T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-10-19T05:00:00Z",
+        "delta_ms": 14400000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-11-14T01:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-03-12T01:00:00Z",
+        "delta_ms": 25200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-05-15T02:00:00Z",
+        "delta_ms": 39600000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-08-15T01:00:00Z",
+        "delta_ms": 32400000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-11-13T01:00:00Z",
+        "delta_ms": 10800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-11-25T01:00:00Z",
+        "delta_ms": 10800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-02-09T01:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-02-19T11:00:00Z",
+        "delta_ms": 21600000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-03-04T09:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-04-25T01:00:00Z",
+        "delta_ms": 10800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-06-28T01:00:00Z",
+        "delta_ms": 14400000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-11-30T05:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "4h",
+        "missing_from_open": "2017-09-06T12:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "4h",
+        "missing_from_open": "2018-02-08T00:00:00Z",
+        "delta_ms": 115200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "4h",
+        "missing_from_open": "2018-06-26T00:00:00Z",
+        "delta_ms": 43200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "4h",
+        "missing_from_open": "2018-07-04T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "4h",
+        "missing_from_open": "2018-11-14T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "4h",
+        "missing_from_open": "2019-03-12T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "4h",
+        "missing_from_open": "2019-05-15T00:00:00Z",
+        "delta_ms": 43200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "4h",
+        "missing_from_open": "2019-08-15T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "BTCUSDT",
+        "interval": "4h",
+        "missing_from_open": "2020-02-19T08:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2017-09-06T15:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-01-04T03:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-02-08T00:00:00Z",
+        "delta_ms": 120494800,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-02-11T03:28:14Z",
+        "delta_ms": 1905200,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-06-26T01:00:00Z",
+        "delta_ms": 39600000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-06-27T12:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-07-04T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-10-19T05:00:00Z",
+        "delta_ms": 14400000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2018-11-14T01:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-03-12T01:00:00Z",
+        "delta_ms": 25200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-05-15T02:00:00Z",
+        "delta_ms": 39600000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-08-15T01:00:00Z",
+        "delta_ms": 32400000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-11-13T01:00:00Z",
+        "delta_ms": 10800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2019-11-25T01:00:00Z",
+        "delta_ms": 10800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-02-09T01:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-02-19T11:00:00Z",
+        "delta_ms": 21600000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-03-04T09:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-04-25T01:00:00Z",
+        "delta_ms": 10800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-06-28T01:00:00Z",
+        "delta_ms": 14400000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "1h",
+        "missing_from_open": "2020-11-30T05:00:00Z",
+        "delta_ms": 7200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "4h",
+        "missing_from_open": "2017-09-06T12:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "4h",
+        "missing_from_open": "2018-02-08T00:00:00Z",
+        "delta_ms": 115200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "4h",
+        "missing_from_open": "2018-06-26T00:00:00Z",
+        "delta_ms": 43200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "4h",
+        "missing_from_open": "2018-07-04T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "4h",
+        "missing_from_open": "2018-11-14T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "4h",
+        "missing_from_open": "2019-03-12T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "4h",
+        "missing_from_open": "2019-05-15T00:00:00Z",
+        "delta_ms": 43200000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "4h",
+        "missing_from_open": "2019-08-15T00:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      },
+      {
+        "pair": "ETHUSDT",
+        "interval": "4h",
+        "missing_from_open": "2020-02-19T08:00:00Z",
+        "delta_ms": 28800000,
+        "candidate_repair": "data.binance.vision daily klines exist for these days but PROBE shows identical absence (not repairable); no other same-origin source",
+        "cause": "authentic upstream archive hole (slot deltas identical for BTCUSDT and ETHUSDT; daily-file probe mirrors absence)"
+      }
+    ],
+    "rule": "every missing-cadence slot is sha/fetch-documented (M1.3); repair never rewrites existing frozen files"
+  },
+  "verdict": {
+    "M1.2_manifest": "PASS",
+    "M1.4_gates": "PASS",
+    "note": "see gap_protocol"
+  }
+}
