@@ -15,7 +15,8 @@ documented conservative reading of the spec.
 """
 from __future__ import annotations
 
-from decimal import Decimal
+from decimal import Decimal, getcontext
+getcontext().prec = 80
 
 TAKER_FEE_PCT = Decimal("0.001")        # 0.10% per side, VIP0
 SLIP_FLOOR_BPS = Decimal("0.0002")      # 2 bps of the fill level

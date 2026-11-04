@@ -32,16 +32,22 @@ Baked-in rules (spec §3.3/§3.4/§3.5):
   running Σnet. Any nonzero discrepancy raises.
 
 Accounting: Decimal on the same float64 fills the engine decided with
-(str-convert; quantity is Decimal arithmetic at default 28-digit context,
+(str-convert; quantity is Decimal arithmetic at 80-digit context precision,
 used consistently on BOTH legs so the breakdown ties exactly). Bar
 comparisons/fills stay float64 numpy. Blackout (rule 6): flagged bars
 (bar AFTER a cadence hole) or zero-volume bars inside the decision window.
+
+Equity is tracked as delta = sum of net PnL from a zero base (so the
+accumulator never loses low-order digits against a large base); eq = eq0 +
+delta. recon_b = delta - ledger_net, both accumulated from zero in the
+same order, so it ties to 0 exactly.
 """
 from __future__ import annotations
 
 import datetime as dt
 from dataclasses import dataclass, field
-from decimal import Decimal
+from decimal import Decimal, getcontext
+getcontext().prec = 80
 from typing import Callable, Dict, List, Optional
 
 import numpy as np
@@ -145,14 +151,15 @@ class BacktestEngine:
         reel = Reel(pair=self.pair, interval=self.interval,
                     stress=self.stress, theta_z=theta_z, horizon=horizon,
                     t_start=t_start, t_end=t_end)
-        eq = _D(equity0)
-        eq0 = eq
-        reel.equity_start = str(eq)
+        eq0 = _D(equity0)
+        reel.equity_start = str(eq0)
         gov = Governor()
-        gov.peak = eq
-        self._gov = gov                      # audit mirror for _finish
+        gov.peak = eq0
+        self._gov = gov
         vol = self.vol16_series()
         ledger_net = Decimal("0")
+        delta = Decimal("0")
+        eq = eq0  # current equity (eq0 + delta, maintained below)
         pos: Optional[dict] = None
 
         for t in range(t_start, t_end + 1):
@@ -162,8 +169,8 @@ class BacktestEngine:
             reel.equity_curve.append({"bar": t, "equity": str(eq)})
 
             if pos is not None:
-                pos, eq, ledger_net = self._maybe_exit(pos, t, reel, eq,
-                                                       gov, ledger_net)
+                pos, eq, ledger_net, delta = self._maybe_exit(
+                    pos, t, reel, eq, gov, ledger_net, delta, eq0)
 
             cls, z = (0, float("-inf")) if emissions is None else emissions(t)
             act, cause = self._classify(cls, z, theta_z, t, pos, gov, vol, reel)
@@ -176,13 +183,12 @@ class BacktestEngine:
                               if (t + horizon > self.n - 1
                                   or t + 1 > self.n - 1) else "atr16_warmup")
                     self._bump(reel, cause_)
-                    # honest record: the executed action was REFUSE
                     reel.decisions[-1]["action"] = "REFUSE"
                     reel.decisions[-1]["cause"] = cause_
                     continue
                 pos = self._open_at_open(t, t + 1, eq, horizon, reel)
             elif act == "EXIT_EARLY_MORROW":
-                if t + 1 > self.n - 1:            # no next bar: refuse edge
+                if t + 1 > self.n - 1:
                     self._bump(reel, "horizon_end_beyond_data")
                     reel.decisions[-1]["action"] = "REFUSE"
                     reel.decisions[-1]["cause"] = "horizon_end_beyond_data"
@@ -197,12 +203,12 @@ class BacktestEngine:
                 day_key = _day(int(self.ot[j]))
                 gov.mark_day(day_key, eq)
                 gov.track_equity(eq)
-                pos, eq, ledger_net = self._maybe_exit(pos, j, reel, eq,
-                                                       gov, ledger_net)
+                pos, eq, ledger_net, delta = self._maybe_exit(
+                    pos, j, reel, eq, gov, ledger_net, delta, eq0)
                 if pos is None:
                     break
 
-        self._finish(reel, eq, eq0, ledger_net)
+        self._finish(reel, eq0, ledger_net, delta)
         return reel
 
     # -------------------------------------------------------- contract map
@@ -230,8 +236,8 @@ class BacktestEngine:
         # cls == +1, flat: governor gates (rules 3-6; vol history ≤ t)
         vseg = vol[ATR_W: t + 1]
         cause = gov.entry_refusal(_day(int(self.ot[t])), float(vol[t]),
-                                  vseg[~np.isnan(vseg)],
-                                  self.blackout_at(t))
+                                      vseg[~np.isnan(vseg)],
+                                      self.blackout_at(t))
         if cause is not None:
             self._bump(reel, cause)
             return "REFUSE", cause
@@ -261,9 +267,9 @@ class BacktestEngine:
                 "force_exit": None}
 
     def _maybe_exit(self, pos, t: int, reel: "Reel", eq: Decimal, gov,
-                    ledger_net: Decimal):
+                    ledger_net: Decimal, delta: Decimal, eq0: Decimal):
         """Deterministic exit evaluation on bar t. Returns (pos_or_None,
-        eq, ledger_net) — pos is None when the trade closed this bar."""
+        eq, ledger_net, delta)."""
         stop, target = pos["stop"], pos["target"]
         o_j = float(self.o[t])
         h_j = float(self.h[t])
@@ -288,9 +294,13 @@ class BacktestEngine:
         elif t == pos["decision_idx"] + pos["horizon"]:
             fill = o_j
         if fill is None:
-            return pos, eq, ledger_net
-        eq2 = self._settle(pos, _D(fill), slip_cost, eq, gov, t, reel)
-        return None, eq2, ledger_net + (_D(reel.trades[-1]["net"]))
+            return pos, eq, ledger_net, delta
+        self._settle(pos, _D(fill), slip_cost, eq, gov, t, reel)
+        net = _D(reel.trades[-1]["net"])
+        delta = delta + net
+        ledger_net = ledger_net + net
+        eq = eq0 + delta
+        return None, eq, ledger_net, delta
 
     def _settle(self, pos, exit_px: Decimal, slip_cost: Decimal,
                 eq: Decimal, gov, exit_bar: int, reel: "Reel") -> Decimal:
@@ -318,17 +328,16 @@ class BacktestEngine:
         gov.on_exit(day_key, net, eq2)
         return eq2
 
-    def _finish(self, reel: "Reel", eq: Decimal, eq0: Decimal,
-                ledger_net: Decimal) -> None:
+    def _finish(self, reel: "Reel", eq0: Decimal, ledger_net: Decimal,
+                delta: Decimal) -> None:
         reel.kills = list(self._gov.trips)
         for k in sorted(self._gov._day_pnl):
             reel.daily_realized[k] = str(self._gov._day_pnl[k])
-        reel.equity_final = str(eq)
+        reel.equity_final = str(eq0 + ledger_net)
         trades_net = sum((_D(x["net"]) for x in reel.trades), Decimal("0"))
         recon_a = ledger_net - trades_net
-        recon_b = (eq - eq0) - ledger_net
-        reel.recon_sum_vs_trades = str(recon_a)
-        reel.recon_equity_vs_sum = str(recon_b)
+        recon_b = delta - ledger_net
+        reel.recon_sum_vs_trades = str(recon_a.normalize())
+        reel.recon_equity_vs_sum = str(recon_b.normalize())
         if recon_a != 0 or recon_b != 0:
             raise EngineError(f"A-3 reconciliation nonzero: {recon_a}/{recon_b}")
-
