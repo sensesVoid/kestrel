@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# codegraph local index
+.codegraph/
+
+# Artifacts / logs (never commit repo root logs)
+.artifacts/*
+!.artifacts/.gitkeep
+
+# Data (frozen snapshots are sha-pinned; large zips ignored, manifests committed)
+bench_data/**/*.zip
+bench_data/**/raw/
+
+# Secrets / env
+.env
+.env.*
+*.key
+
+# OS
+Thumbs.db
+.DS_Store
+
+# sqac memory (shared, but local cartridge state)
+.sqac/
+*.sqac
+.sqacm/

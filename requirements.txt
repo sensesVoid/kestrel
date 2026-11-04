@@ -1,0 +1,24 @@
+# Kestrel — pinned runtime (spec §10: every graded run prints its versions
+# and pins them in a lockfile; lockfile = requirements.lock, generated after
+# install into .venv, committed next to this file).
+#
+# Provenance: pins below MIRROR Herald's working, experiment-proven stack
+# (C:\Users\geral\Project_Herald\.venv, Python 3.11) exactly. Herald's torch
+# is the +cu130 PyTorch-index build; Kestrel uses the PyPI default (CPU)
+# build of the same 2.14.1 — vendored cores are integer/quantized ops with
+# no GPU/float-sensitive kernels, and the build difference is documented.
+#
+# Install:  .venv\Scripts\python.exe -m pip install -r requirements.txt
+# Freeze:   .venv\Scripts\python.exe -m pip freeze > requirements.lock
+#
+# NOTE: the hyperdimensional package's distribution name is `torch-hd`
+# (import name `torchhd`). It is NOT on PyPI as "torchhd".
+
+numpy==2.4.6
+pandas==3.0.6
+scipy==1.17.1
+torch==2.14.1
+torch-hd==5.8.4
+pytest==8.3.4
+# statsmodels (GARCH, L0-analysis-only; §10): resolved at install; pin added
+# to requirements.lock by pip freeze. ccxt (Phase-C, M7) deliberately absent.

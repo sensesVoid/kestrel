@@ -1,6 +1,8 @@
 # Trading AI Agent — Project Spec & Training-Data Plan
 
-**Status:** DRAFT v1 2026-11-05, for owner sign-off. Source project:
+**Status:** SPEC-1 (v1 signed off by owner 2026-11-05; project name "Kestrel"
+retained; M0 boot authorized). Originally DRAFT v1, for owner sign-off.
+Source project:
 `C:\Users\geral\Project_Herald` (Herald, morphogenetic AGI aspirant) — this
 new project starts FROM Herald: its proven model core, its evaluation
 discipline, and its documentation canon. Decisions taken with the owner
@@ -552,3 +554,4 @@ code), and §5/§6 freeze-by-freeze under that repo's own GAP-10 law.*
 | date | change | why |
 |---|---|---|
 | 2026-11-05 | **Builder check folded (six questions, all resolved in-document, zero promoted to the owner):** (1) windows/seal contradiction fixed — L1 grades 34 windows (2023-07→2026-04); the 6-month seal opens at its own later gate (§4.3). (2) Emission contract defined — `c=0` is the only flat class; SELL-with-no-inventory is a refusal-with-cause, structurally prohibited from being a naked short, not an A-2 wrong; EXIT_EARLY licensed; no re-entry inside a horizon (§3.3). (3) θ_z calibration slice pinned INSIDE the train fold's tail, never the graded window (§3.3). (4) stop/target levels + mid-bar fill conventions made deterministic functions of frozen OHLC; labels unified with the accounting fill path (realized-path labels), removing the close→open label/accounting offset (§3.5, §4.4). (5) A-5 split into per-trade bps floor AND window equity floor with fixed 2% notional sizing; GARCH demoted to L0-analysis-only (§3.2, §3.4, §5). (6) kill clause mapped — any daily kill trip inside a window forces REFUSE-only for the window's remainder; trading past it is the bar failure (§5 A-5). | fresh builder subagent review of the v1 draft; house pattern: pre-deliverable check, disclosed repairs, nothing hidden |
+| 2026-11-05 | **Owner sign-off + M0 boot:** v1 signed off as **SPEC-1** (this document is the signed version, byte-authoritative over any other copy). Project name retained: **Kestrel** (`C:\Users\geral\Project_Kestrel`). Standing ruling: for items needing owner decisions, the builder provides its best recommendation first and acts on it; owner re-litigates only via R-suffix pre-registration. M0–M6 execution authorized. | owner ruling delivered this session (recommended option confirmed: sign-off + retain name); unblocks Lane 1 |

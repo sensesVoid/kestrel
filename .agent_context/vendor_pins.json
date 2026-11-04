@@ -1,0 +1,46 @@
+{
+    "pinned_at":  "2026-11-05",
+    "pins":  [
+                 {
+                     "bytes":  16867,
+                     "source":  "C:\\Users\\geral\\Project_Herald\\experiments\\x28_wirule.py",
+                     "sha256":  "8a77c0ad672e2edfe1ae35465fc35fa0392076ef318d2dffd75d7f63da610dbe",
+                     "vendored_at":  "2026-11-05",
+                     "role":  "S1 kernel (WiRULE weightless-network readout, derivation 61)",
+                     "vendored":  "src/vendor/x28_wirule.py"
+                 },
+                 {
+                     "bytes":  14300,
+                     "source":  "C:\\Users\\geral\\Project_Herald\\src\\clay.py",
+                     "sha256":  "c9dd9396160cac43aaccb6dfcf1e2d7bfe686fab1da7a12d21354964ab1e088f",
+                     "vendored_at":  "2026-11-05",
+                     "role":  "Clay substrate (torch/hd coding, byte-neutral checkpoints)",
+                     "vendored":  "src/vendor/clay.py"
+                 },
+                 {
+                     "bytes":  2657,
+                     "source":  "C:\\Users\\geral\\Project_Herald\\src\\paths.py",
+                     "sha256":  "aea5ac971d0f3ee03febcbca8ca5937a4e04c5d4fa9c733a970906a5155c3048",
+                     "vendored_at":  "2026-11-05",
+                     "role":  "S1 friend: results/ledger dir contract (x28 import)",
+                     "vendored":  "src/vendor/paths.py"
+                 },
+                 {
+                     "bytes":  21911,
+                     "source":  "C:\\Users\\geral\\Project_Herald\\experiments\\x20_learn_probe.py",
+                     "sha256":  "0459b4e9a3363542f100660853701ab0eefe732e7b43bab5b77a9f4212087549",
+                     "vendored_at":  "2026-11-05",
+                     "role":  "S1 friend: population source (N_BITS, CHECKPOINTS, streams) (x28 import)",
+                     "vendored":  "src/vendor/x20_learn_probe.py"
+                 },
+                 {
+                     "bytes":  63080,
+                     "source":  "C:\\Users\\geral\\Project_Herald\\experiments\\tr1_replay.py",
+                     "sha256":  "10bd24afbc22484b0ec8be1dfe31fd208fcd7a92fceac9687c6830ced0c7cc6a",
+                     "vendored_at":  "2026-11-05",
+                     "role":  "Quantizer templates (QUANTIZER/RULES L188-199) + quantize-table generator (_sign/adapter/Audit L282-347)",
+                     "vendored":  "src/vendor/tr1_replay.py"
+                 }
+             ],
+    "discipline":  "M0.2 (spec 486-488): pins recorded BEFORE first graded run; runner asserts sha256 at setup and refuses on mismatch"
+}
