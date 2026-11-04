@@ -6,7 +6,7 @@ Kanban: `CHECKLIST.md`. Handoff: `.agent_context/memory/kestrel_next.md`.
 
 ## Status
 - M0 DONE (2026-11-05): SPEC-1 signed off; vendor pins (5 files,
-  `specs/VENDOR_MAP.md` + `.agent_context/vendor_pins.json`); house laws
+  `specs/VENDOR_MAP.md` + `specs/vendor_pins.json`); house laws
   (`specs/HOUSE_LAWS.md`); GAP-10 boot (`specs/GAP10_BOOT.md`, L1 names
   frozen + ABSENT-verified); deps pinned (Herald stack, `torch-hd` dist!)
   into `.venv` (Python 3.11.9); raw data staged (666 kline zips).

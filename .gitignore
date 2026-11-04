@@ -26,6 +26,9 @@ bench_data/**/raw/
 Thumbs.db
 .DS_Store
 
+# untracked shared-memory dirs (spec: .agent_context carried, never committed)
+.agent_context/
+
 # sqac memory (shared, but local cartridge state)
 .sqac/
 *.sqac

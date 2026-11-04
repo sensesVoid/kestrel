@@ -2,7 +2,7 @@
 
 **Discipline (spec §10 / Herald §112 reference-freeze):** vendored Herald sources
 arrive with content-sha256 pins recorded in THIS repo's own ledger — in
-`specs/VENDOR_MAP.md` (human) and `.agent_context/vendor_pins.json` (machine,
+`specs/VENDOR_MAP.md` (human) and `specs/vendor_pins.json` (machine,
 asserted by runners at setup) — recorded **before** the first graded run.
 Pinned at 2026-11-05. A runner that finds a sha mismatch **refuses to run**.
 Changing a vendored file is a redesign: new R-suffix pre-registration, never a
@@ -42,9 +42,16 @@ silent edit (dual record).
 
 ## Assertion contract (M2.2 onward)
 
-- Every graded runner asserts, at setup, each pin above against
-  `.agent_context/vendor_pins.json`, then `json.dumps(QUANTIZER)` /
-  `json.dumps(RULES)` shas against the values frozen in `tr1_replay.py`
-  (quantizer lock, inherited §80.3).
+- Vendored files are **frozen reference sources** (pin = content sha256),
+  recorded in `specs/vendor_pins.json`; every graded runner asserts all pins
+  at setup and refuses on mismatch.
+- The Herald experiment import-closure of `tr1_replay.py` (x31_coverage →
+  x29, x30, decide_stage → …) is deliberately NOT vendored: those siblings
+  are harness plants for Herald's own benches, not for Kestrel real-data
+  runs. Kestrel's quantizer module (M2) extracts the frozen constants
+  (`QUANTIZER`, `RULES`, their shas) from the pinned bytes and asserts their
+  `json.dumps` serialization shas — the quantizer lock, inherited §80.3.
+- `clay.py` is runtime-importable by Kestrel (verified: imports clean atop
+  numpy 2.4.6 / torch 2.14.1+cpu / torch-hd 5.8.4, 2026-11-05).
 - Dependency note (docs, not pins): `clay.py` imports numpy, torch, **torchhd**;
   `x20_learn_probe.py` imports torch — hence `requirements.txt` pins both.

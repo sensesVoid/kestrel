@@ -125,7 +125,9 @@ these requires a new pre-registration (R-suffix), not an edit.
             `.artifacts/`. → all present + `.venv` = Python 3.11.9.
       - [x] M0.2 Vendor map: pins recorded BEFORE first graded run (§112
             discipline). → `specs/VENDOR_MAP.md` + machine
-            `.agent_context/vendor_pins.json`; 5 files pinned: `x28_wirule.py`
+            `.agent_context/vendor_pins.json` → moved to tracked
+            `specs/vendor_pins.json` (memory dir untracked); 5 files pinned:
+            `x28_wirule.py`
             `8a77c0ad…`, `clay.py` `c9dd9396…`, `paths.py` `aea5ac97…`,
             `x20_learn_probe.py` `0459b4e9…`, `tr1_replay.py` `10bd24af…`
             (carries quantizer templates L188–199 + quantize-table generator
@@ -258,7 +260,8 @@ these requires a new pre-registration (R-suffix), not an edit.
 | date | change | why |
 |---|---|---|
 | 2026-11-05 | Board card created (Kestrel kanban) from SPEC v1 milestones/bars/rungs; sqac MCP installed & registered; handoff memory created. | owner request: track completion, avoid misses/hallucination. |
-| 2026-11-05 | **M0 executed:** SPEC-1 signed off (+od-2 name retained); 5 vendor files pinned (`specs/VENDOR_MAP.md`, `.agent_context/vendor_pins.json`); house laws `specs/HOUSE_LAWS.md` (HL-1..10); GAP-10 boot `specs/GAP10_BOOT.md` with ABSENT verification PASSED; requirements pinned mirroring Herald stack (torch-hd is `torch-hd` dist, import `torchhd`); pinned deps install → `requirements.lock`. | Lane 1 start; owner sign-off this session. |
+| 2026-11-05 | **M0 executed:** SPEC-1 signed off (+od-2 name retained); 5 vendor files pinned (`specs/VENDOR_MAP.md`, `specs/vendor_pins.json` machine copy); house laws `specs/HOUSE_LAWS.md` (HL-1..10); GAP-10 boot `specs/GAP10_BOOT.md` with ABSENT verification PASSED; requirements pinned mirroring Herald stack (torch-hd is `torch-hd` dist, import `torchhd`); pinned deps install → `requirements.lock`. | Lane 1 start; owner sign-off this session. |
+| 2026-11-05 | `.agent_context/` untracked (gitignored; spec-prescribed local-only); machine vendor pins relocated to tracked `specs/vendor_pins.json`; refs updated. | owner instruction: keep memory local-only. |
 
 ---
 
@@ -267,7 +270,7 @@ these requires a new pre-registration (R-suffix), not an edit.
 | item | artifact path | ledger key | date |
 |---|---|---|---|
 | P0.1/P0.2 owner sign-off + name | `trading-agent-spec.md` (Amendments row + SPEC-1 header) | — | 2026-11-05 |
-| M0.2 vendor pins (5 files) | `specs/VENDOR_MAP.md`, `.agent_context/vendor_pins.json` | — | 2026-11-05 |
+| M0.2 vendor pins (5 files) | `specs/VENDOR_MAP.md`, `specs/vendor_pins.json` | — | 2026-11-05 |
 | M0.3 house laws | `specs/HOUSE_LAWS.md` | — | 2026-11-05 |
 | M0.4 GAP-10 boot + ABSENT verification | `specs/GAP10_BOOT.md` (verification log inside) | `kestrel_beds.L1` (reserved) | 2026-11-05 |
 | M0.6 M0 commit (SPEC-1 + all above) | this repo, footer-free commit | — | 2026-11-05 |
