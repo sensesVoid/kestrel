@@ -28,6 +28,9 @@ Thumbs.db
 
 # untracked shared-memory dirs (spec: .agent_context carried, never committed)
 .agent_context/
+# agent memory & process files (local-only; GitHub mirrors project essentials)
+AGENTS.md
+CHECKLIST.md
 
 # sqac memory (shared, but local cartridge state)
 .sqac/
