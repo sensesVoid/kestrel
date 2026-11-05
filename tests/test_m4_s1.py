@@ -65,8 +65,8 @@ def test_emission_contract():
         core.update(x, 1)
     for _ in range(55):
         core.update([0, 1, 0, 1, 0, 1, 0, 1], -1)
-    # before threshold: low z -> 0
-    cls0, z0 = core.emit(x, theta_z=10.0)
+    # before threshold: low z -> 0 (use a threshold above this cell's z)
+    cls0, z0 = core.emit(x, theta_z=100.0)
     assert cls0 == 0
     # with theta_z=0, confident cell emits +/-1
     cls1, z1 = core.emit(x, theta_z=0.0)

@@ -26,6 +26,7 @@ from kestrel.s1 import threshold_table
 from kestrel.s1.train import train_s1
 from kestrel.stats.quantizer import AdapterAudit, quantize_window, quantize_many, W as W16
 
+SUFFIX = ""
 ARTIFACT = os.path.join(ROOT, "results", "l1_walkforward.json")
 SEEDS = [1, 2, 3]
 HORIZON = 4
@@ -40,10 +41,9 @@ def _population_sha() -> str:
     return hashlib.sha256(open(p, "rb").read()).hexdigest()
 
 
-def _absence_check():
-    # M6.2: runner must not overwrite a pre-existing graded artifact silently
-    if os.path.exists(ARTIFACT):
-        raise RuntimeError(f"graded artifact already exists: {ARTIFACT} "
+def _absence_check(artifact):
+    if os.path.exists(artifact):
+        raise RuntimeError(f"graded artifact already exists: {artifact} "
                            f"(absence/re-run requires R-suffix pre-reg)")
 
 
@@ -156,7 +156,15 @@ def _run_mutations(channel, window, seed) -> dict:
 
 
 def main():
-    _absence_check()
+    import argparse as _ap
+    _parser = _ap.ArgumentParser()
+    _parser.add_argument("--suffix", default=SUFFIX)
+    _args = _parser.parse_args()
+    suffix = _args.suffix
+    artifact = os.path.join(ROOT, "results",
+                            f"l1_walkforward{('_'+suffix) if suffix else ''}.json")
+    ledger_key = f"kestrel_beds.L1{('.'+suffix) if suffix else ''}"
+    _absence_check(artifact)
     channel = load("BTCUSDT", "1h")
     assert_manifest(channel) if False else None
     # manifest sha check
@@ -189,7 +197,8 @@ def main():
             all_window_results.append((seed, res))
         per_seed[seed] = seed_results
         # incremental write (HL-7)
-        inc_path = os.path.join(ROOT, "results", f"l1_walkforward_seed{seed}.json")
+        inc_path = os.path.join(ROOT, "results",
+                                "l1_walkforward" + (("_" + suffix) if suffix else "") + "_seed" + str(seed) + ".json")
         with open(inc_path, "w", encoding="utf-8") as f:
             json.dump({"seed": seed, "windows": seed_results,
                        "elapsed_s": round(time.time() - t0, 2)}, f, indent=2, default=str)
@@ -256,10 +265,11 @@ def main():
         "elapsed_s": round(time.time() - t0, 2),
         "ledger_key": "kestrel_beds.L1",
     }
-    os.makedirs(os.path.dirname(ARTIFACT), exist_ok=True)
-    with open(ARTIFACT, "w", encoding="utf-8") as f:
+    os.makedirs(os.path.dirname(artifact), exist_ok=True)
+    result["ledger_key"] = ledger_key
+    with open(artifact, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=2, default=str)
-    print("WROTE", ARTIFACT)
+    print("WROTE", artifact)
     print("A-bars:", a_bars)
     print("aggregated expectancy mean:", result["aggregated"]["expectancy_bps"]["mean"])
     print("refuse share mean:", result["aggregated"]["refuse_share"]["mean"])

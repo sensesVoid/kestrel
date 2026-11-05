@@ -59,6 +59,6 @@ def train_s1(o, h, l, c, v, closes, horizon: int, theta_bps: float = ZERO_BAND_B
         X_hold.append([int(f) for f in feats])
 
     from .calibration import calibrate_theta_z
-    theta_z = calibrate_theta_z(core, X_hold, quantile=0.7)
+    theta_z = calibrate_theta_z(core, X_hold, quantile=0.6)
 
     return core, theta_z, X_hold, labels

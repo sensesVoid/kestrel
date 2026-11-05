@@ -1,0 +1,3105 @@
+{
+  "schema": "kestrel-l1-walkforward-v1",
+  "manifest": {
+    "schema": "kestrel-run-manifest-v1",
+    "no_network_io": true,
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "n_windows": 34,
+    "windows": [
+      {
+        "idx": 0,
+        "train": [
+          46838,
+          51157
+        ],
+        "test": [
+          51325,
+          52045
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 1,
+        "train": [
+          47582,
+          51901
+        ],
+        "test": [
+          52069,
+          52789
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 2,
+        "train": [
+          48326,
+          52645
+        ],
+        "test": [
+          52813,
+          53533
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 3,
+        "train": [
+          49045,
+          53365
+        ],
+        "test": [
+          53533,
+          54253
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 4,
+        "train": [
+          49789,
+          54109
+        ],
+        "test": [
+          54277,
+          54997
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 5,
+        "train": [
+          50509,
+          54829
+        ],
+        "test": [
+          54997,
+          55717
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 6,
+        "train": [
+          51253,
+          55573
+        ],
+        "test": [
+          55741,
+          56461
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 7,
+        "train": [
+          51997,
+          56317
+        ],
+        "test": [
+          56485,
+          57205
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 8,
+        "train": [
+          52693,
+          57013
+        ],
+        "test": [
+          57181,
+          57901
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 9,
+        "train": [
+          53437,
+          57757
+        ],
+        "test": [
+          57925,
+          58645
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 10,
+        "train": [
+          54157,
+          58477
+        ],
+        "test": [
+          58645,
+          59365
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 11,
+        "train": [
+          54901,
+          59221
+        ],
+        "test": [
+          59389,
+          60109
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 12,
+        "train": [
+          55621,
+          59941
+        ],
+        "test": [
+          60109,
+          60829
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 13,
+        "train": [
+          56365,
+          60685
+        ],
+        "test": [
+          60853,
+          61573
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 14,
+        "train": [
+          57109,
+          61429
+        ],
+        "test": [
+          61597,
+          62317
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 15,
+        "train": [
+          57829,
+          62149
+        ],
+        "test": [
+          62317,
+          63037
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 16,
+        "train": [
+          58573,
+          62893
+        ],
+        "test": [
+          63061,
+          63781
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 17,
+        "train": [
+          59293,
+          63613
+        ],
+        "test": [
+          63781,
+          64501
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 18,
+        "train": [
+          60037,
+          64357
+        ],
+        "test": [
+          64525,
+          65245
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 19,
+        "train": [
+          60781,
+          65101
+        ],
+        "test": [
+          65269,
+          65989
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 20,
+        "train": [
+          61453,
+          65773
+        ],
+        "test": [
+          65941,
+          66661
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 21,
+        "train": [
+          62197,
+          66517
+        ],
+        "test": [
+          66685,
+          67405
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 22,
+        "train": [
+          62917,
+          67237
+        ],
+        "test": [
+          67405,
+          68125
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 23,
+        "train": [
+          63661,
+          67981
+        ],
+        "test": [
+          68149,
+          68869
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 24,
+        "train": [
+          64381,
+          68701
+        ],
+        "test": [
+          68869,
+          69589
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 25,
+        "train": [
+          65125,
+          69445
+        ],
+        "test": [
+          69613,
+          70333
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 26,
+        "train": [
+          65869,
+          70189
+        ],
+        "test": [
+          70357,
+          71077
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 27,
+        "train": [
+          66589,
+          70909
+        ],
+        "test": [
+          71077,
+          71797
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 28,
+        "train": [
+          67333,
+          71653
+        ],
+        "test": [
+          71821,
+          72541
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 29,
+        "train": [
+          68053,
+          72373
+        ],
+        "test": [
+          72541,
+          73261
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 30,
+        "train": [
+          68797,
+          73117
+        ],
+        "test": [
+          73285,
+          74005
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 31,
+        "train": [
+          69541,
+          73861
+        ],
+        "test": [
+          74029,
+          74749
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 32,
+        "train": [
+          70213,
+          74533
+        ],
+        "test": [
+          74701,
+          75421
+        ],
+        "embargo_bars": 168
+      },
+      {
+        "idx": 33,
+        "train": [
+          70957,
+          75277
+        ],
+        "test": [
+          75445,
+          76165
+        ],
+        "embargo_bars": 168
+      }
+    ],
+    "population_sha256": "01b1c8cc88b6bac04c602b5a6ecc3a9606baeac5404ba46428bc7a2aa3544c56",
+    "quantizer_sha256": "533ce81778c5c8b3418e5de74ddb62090856466ece698c46b5ecd0bc2167cdc1",
+    "threshold_table_sha256": "73e3f7844f8b93cfbd572137d95fef30dc86a8f955fd3f7eabdd53a992e01fe9",
+    "versions": {
+      "python": "3.11.9",
+      "platform": "Windows-10-10.0.26300-SP0",
+      "numpy": "2.4.6",
+      "pandas": "3.0.6",
+      "torch": "2.14.1+cpu",
+      "torchhd": "5.8.4",
+      "scipy": "1.17.1"
+    },
+    "manifest_sha256": "65c6dbb510c1ac09f1fa9d2cbd7a24f9b23fb71ade42a66313d9daab759e6c90"
+  },
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "n_windows": 34,
+  "per_window": [
+    {
+      "seed": 1,
+      "window_idx": 0,
+      "theta_z": 1.34375,
+      "core_t": 2005,
+      "n_trades": 30,
+      "expectancy_bps": -1776.2428582802584,
+      "window_equity_final": 8971.768952972969,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9046941678520626,
+      "refusals": {
+        "zero_band": 449,
+        "no_inventory_short": 113,
+        "governor_daily_kill_refuse_only_rest_of_day": 11,
+        "governor_top_vol_percentile_regime": 2,
+        "governor_drawdown_full_stop_awaiting_rearm": 61
+      },
+      "n_kills": 3,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2023-07-05",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2023-07-16",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2023-07-17",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 1,
+      "theta_z": 5.15625,
+      "core_t": 2087,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 478,
+        "no_inventory_short": 225
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 2,
+      "theta_z": 3.875,
+      "core_t": 1963,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 390,
+        "no_inventory_short": 313
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 3,
+      "theta_z": 6.90625,
+      "core_t": 1749,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 336,
+        "no_inventory_short": 367
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 4,
+      "theta_z": 10.75,
+      "core_t": 1619,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 504,
+        "no_inventory_short": 199
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 5,
+      "theta_z": 4.75,
+      "core_t": 1635,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "no_inventory_short": 264,
+        "zero_band": 439
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 6,
+      "theta_z": 3.4375,
+      "core_t": 1629,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 442,
+        "no_inventory_short": 261
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 7,
+      "theta_z": 2.0625,
+      "core_t": 1792,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "no_inventory_short": 322,
+        "zero_band": 381
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 8,
+      "theta_z": 2.09375,
+      "core_t": 2020,
+      "n_trades": 12,
+      "expectancy_bps": -9400.216539906012,
+      "window_equity_final": 7744.650958661631,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9601706970128022,
+      "refusals": {
+        "zero_band": 411,
+        "no_inventory_short": 76,
+        "governor_drawdown_full_stop_awaiting_rearm": 188
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-03-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 9,
+      "theta_z": 7.96875,
+      "core_t": 2187,
+      "n_trades": 40,
+      "expectancy_bps": -2535.8940113157987,
+      "window_equity_final": 8075.459382117347,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.844950213371266,
+      "refusals": {
+        "zero_band": 413,
+        "governor_daily_kill_refuse_only_rest_of_day": 7,
+        "governor_top_vol_percentile_regime": 14,
+        "governor_drawdown_full_stop_awaiting_rearm": 160
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2024-04-12",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-04-15",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 10,
+      "theta_z": 10.46875,
+      "core_t": 2348,
+      "n_trades": 9,
+      "expectancy_bps": -8187.025434796424,
+      "window_equity_final": 8527.020371583414,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9658605974395448,
+      "refusals": {
+        "zero_band": 447,
+        "governor_drawdown_full_stop_awaiting_rearm": 232
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-05-06",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 11,
+      "theta_z": 9.21875,
+      "core_t": 2441,
+      "n_trades": 19,
+      "expectancy_bps": -4465.034127924735,
+      "window_equity_final": 8367.032176402594,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9132290184921764,
+      "refusals": {
+        "zero_band": 415,
+        "governor_daily_kill_refuse_only_rest_of_day": 4,
+        "governor_drawdown_full_stop_awaiting_rearm": 223
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2024-06-02",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-06-07",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 12,
+      "theta_z": 11.15625,
+      "core_t": 2452,
+      "n_trades": 8,
+      "expectancy_bps": -8022.416289313332,
+      "window_equity_final": 8717.0243186016,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9630156472261735,
+      "refusals": {
+        "zero_band": 440,
+        "governor_drawdown_full_stop_awaiting_rearm": 237
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-07-04",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 13,
+      "theta_z": 9.125,
+      "core_t": 2343,
+      "n_trades": 10,
+      "expectancy_bps": -13110.860073633312,
+      "window_equity_final": 7378.0239084574605,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9544807965860598,
+      "refusals": {
+        "zero_band": 413,
+        "governor_drawdown_full_stop_awaiting_rearm": 258
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-08-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 14,
+      "theta_z": 7.5625,
+      "core_t": 2394,
+      "n_trades": 7,
+      "expectancy_bps": -8086.293182944847,
+      "window_equity_final": 8868.181548034285,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9786628733997155,
+      "refusals": {
+        "zero_band": 432,
+        "governor_drawdown_full_stop_awaiting_rearm": 256
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-09-03",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 15,
+      "theta_z": 1.5,
+      "core_t": 2353,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 453,
+        "no_inventory_short": 250
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 16,
+      "theta_z": 1.34375,
+      "core_t": 2334,
+      "n_trades": 5,
+      "expectancy_bps": -11751.367050645931,
+      "window_equity_final": 8825.328955289711,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9857752489331437,
+      "refusals": {
+        "zero_band": 374,
+        "governor_drawdown_full_stop_awaiting_rearm": 319
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-11-03",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 17,
+      "theta_z": 0.8125,
+      "core_t": 2280,
+      "n_trades": 14,
+      "expectancy_bps": -30862.17921144104,
+      "window_equity_final": 1393.9188368805571,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9559032716927454,
+      "refusals": {
+        "zero_band": 428,
+        "no_inventory_short": 54,
+        "governor_drawdown_full_stop_awaiting_rearm": 190
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-12-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 18,
+      "theta_z": 11.0625,
+      "core_t": 2405,
+      "n_trades": 31,
+      "expectancy_bps": -3879.945562875552,
+      "window_equity_final": 7607.013892057028,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8520625889046942,
+      "refusals": {
+        "zero_band": 398,
+        "governor_top_vol_percentile_regime": 6,
+        "governor_drawdown_full_stop_awaiting_rearm": 195
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-01-10",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 19,
+      "theta_z": 5.0,
+      "core_t": 2397,
+      "n_trades": 3,
+      "expectancy_bps": -26191.56775331988,
+      "window_equity_final": 8428.720389902463,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9857752489331437,
+      "refusals": {
+        "zero_band": 400,
+        "governor_drawdown_full_stop_awaiting_rearm": 293
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-02-02",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 20,
+      "theta_z": 7.65625,
+      "core_t": 2382,
+      "n_trades": 74,
+      "expectancy_bps": -556.7723139067696,
+      "window_equity_final": 9182.612265522508,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.6827880512091038,
+      "refusals": {
+        "zero_band": 471,
+        "governor_daily_kill_refuse_only_rest_of_day": 9
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2025-03-28",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 21,
+      "theta_z": 4.53125,
+      "core_t": 2348,
+      "n_trades": 6,
+      "expectancy_bps": -12933.993993186896,
+      "window_equity_final": 8448.839609949007,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9743954480796586,
+      "refusals": {
+        "zero_band": 367,
+        "governor_drawdown_full_stop_awaiting_rearm": 318
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-04-02",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 22,
+      "theta_z": 8.88125,
+      "core_t": 2437,
+      "n_trades": 43,
+      "expectancy_bps": -2375.693803731631,
+      "window_equity_final": 8063.740021799783,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8036984352773826,
+      "refusals": {
+        "zero_band": 444,
+        "governor_daily_kill_refuse_only_rest_of_day": 2,
+        "governor_top_vol_percentile_regime": 7,
+        "governor_drawdown_full_stop_awaiting_rearm": 112
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2025-05-04",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-05-18",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 23,
+      "theta_z": 2.6875,
+      "core_t": 2438,
+      "n_trades": 9,
+      "expectancy_bps": -8228.029748341502,
+      "window_equity_final": 8570.835904025022,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.972972972972973,
+      "refusals": {
+        "zero_band": 383,
+        "governor_daily_kill_refuse_only_rest_of_day": 11,
+        "governor_drawdown_full_stop_awaiting_rearm": 290
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2025-06-02",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-06-04",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 24,
+      "theta_z": 5.46875,
+      "core_t": 2379,
+      "n_trades": 36,
+      "expectancy_bps": -1632.9546383825416,
+      "window_equity_final": 8831.556156179327,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8477951635846372,
+      "refusals": {
+        "zero_band": 398,
+        "governor_top_vol_percentile_regime": 22,
+        "governor_drawdown_full_stop_awaiting_rearm": 176
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-07-14",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 25,
+      "theta_z": 4.987499999999999,
+      "core_t": 2327,
+      "n_trades": 44,
+      "expectancy_bps": -1523.9978641437565,
+      "window_equity_final": 8669.470872339709,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.786628733997155,
+      "refusals": {
+        "zero_band": 442,
+        "governor_top_vol_percentile_regime": 3,
+        "governor_drawdown_full_stop_awaiting_rearm": 108
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-08-18",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 26,
+      "theta_z": 8.8125,
+      "core_t": 2227,
+      "n_trades": 2,
+      "expectancy_bps": -36342.59883336908,
+      "window_equity_final": 8546.793441785005,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9957325746799431,
+      "refusals": {
+        "zero_band": 384,
+        "governor_drawdown_full_stop_awaiting_rearm": 316
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-09-02",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 27,
+      "theta_z": 4.05625,
+      "core_t": 2082,
+      "n_trades": 11,
+      "expectancy_bps": -8579.946028762592,
+      "window_equity_final": 8113.20199236403,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.957325746799431,
+      "refusals": {
+        "zero_band": 435,
+        "governor_drawdown_full_stop_awaiting_rearm": 238
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-10-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 28,
+      "theta_z": 2.46875,
+      "core_t": 1949,
+      "n_trades": 5,
+      "expectancy_bps": -12571.609560807856,
+      "window_equity_final": 8743.184018627462,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9772403982930299,
+      "refusals": {
+        "zero_band": 387,
+        "governor_drawdown_full_stop_awaiting_rearm": 296,
+        "no_inventory_short": 4
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-11-03",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 29,
+      "theta_z": 5.59375,
+      "core_t": 1960,
+      "n_trades": 11,
+      "expectancy_bps": -11166.764381492547,
+      "window_equity_final": 7544.100046179402,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9644381223328592,
+      "refusals": {
+        "zero_band": 446,
+        "governor_drawdown_full_stop_awaiting_rearm": 232
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-12-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 30,
+      "theta_z": 1.53125,
+      "core_t": 2049,
+      "n_trades": 38,
+      "expectancy_bps": -2954.2564323171555,
+      "window_equity_final": 7829.699551182168,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8805120910384068,
+      "refusals": {
+        "zero_band": 454,
+        "no_inventory_short": 41,
+        "governor_daily_kill_refuse_only_rest_of_day": 4,
+        "governor_top_vol_percentile_regime": 3,
+        "governor_drawdown_full_stop_awaiting_rearm": 117
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2026-01-11",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2026-01-19",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 31,
+      "theta_z": 2.0625,
+      "core_t": 2088,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 450,
+        "no_inventory_short": 253
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 32,
+      "theta_z": 1.59375,
+      "core_t": 2090,
+      "n_trades": 45,
+      "expectancy_bps": -28.04915058421274,
+      "window_equity_final": 9974.783455032295,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8079658605974396,
+      "refusals": {
+        "zero_band": 490,
+        "no_inventory_short": 78
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 1,
+      "window_idx": 33,
+      "theta_z": 1.75,
+      "core_t": 2272,
+      "n_trades": 12,
+      "expectancy_bps": -49.521906256471105,
+      "window_equity_final": 9988.120387220353,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9715504978662873,
+      "refusals": {
+        "no_inventory_short": 310,
+        "zero_band": 373
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 0,
+      "theta_z": 1.34375,
+      "core_t": 2005,
+      "n_trades": 30,
+      "expectancy_bps": -1776.2428582802584,
+      "window_equity_final": 8971.768952972969,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9046941678520626,
+      "refusals": {
+        "zero_band": 449,
+        "no_inventory_short": 113,
+        "governor_daily_kill_refuse_only_rest_of_day": 11,
+        "governor_top_vol_percentile_regime": 2,
+        "governor_drawdown_full_stop_awaiting_rearm": 61
+      },
+      "n_kills": 3,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2023-07-05",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2023-07-16",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2023-07-17",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 1,
+      "theta_z": 5.15625,
+      "core_t": 2087,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 478,
+        "no_inventory_short": 225
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 2,
+      "theta_z": 3.875,
+      "core_t": 1963,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 390,
+        "no_inventory_short": 313
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 3,
+      "theta_z": 6.90625,
+      "core_t": 1749,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 336,
+        "no_inventory_short": 367
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 4,
+      "theta_z": 10.75,
+      "core_t": 1619,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 504,
+        "no_inventory_short": 199
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 5,
+      "theta_z": 4.75,
+      "core_t": 1635,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "no_inventory_short": 264,
+        "zero_band": 439
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 6,
+      "theta_z": 3.4375,
+      "core_t": 1629,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 442,
+        "no_inventory_short": 261
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 7,
+      "theta_z": 2.0625,
+      "core_t": 1792,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "no_inventory_short": 322,
+        "zero_band": 381
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 8,
+      "theta_z": 2.09375,
+      "core_t": 2020,
+      "n_trades": 12,
+      "expectancy_bps": -9400.216539906012,
+      "window_equity_final": 7744.650958661631,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9601706970128022,
+      "refusals": {
+        "zero_band": 411,
+        "no_inventory_short": 76,
+        "governor_drawdown_full_stop_awaiting_rearm": 188
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-03-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 9,
+      "theta_z": 7.96875,
+      "core_t": 2187,
+      "n_trades": 40,
+      "expectancy_bps": -2535.8940113157987,
+      "window_equity_final": 8075.459382117347,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.844950213371266,
+      "refusals": {
+        "zero_band": 413,
+        "governor_daily_kill_refuse_only_rest_of_day": 7,
+        "governor_top_vol_percentile_regime": 14,
+        "governor_drawdown_full_stop_awaiting_rearm": 160
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2024-04-12",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-04-15",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 10,
+      "theta_z": 10.46875,
+      "core_t": 2348,
+      "n_trades": 9,
+      "expectancy_bps": -8187.025434796424,
+      "window_equity_final": 8527.020371583414,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9658605974395448,
+      "refusals": {
+        "zero_band": 447,
+        "governor_drawdown_full_stop_awaiting_rearm": 232
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-05-06",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 11,
+      "theta_z": 9.21875,
+      "core_t": 2441,
+      "n_trades": 19,
+      "expectancy_bps": -4465.034127924735,
+      "window_equity_final": 8367.032176402594,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9132290184921764,
+      "refusals": {
+        "zero_band": 415,
+        "governor_daily_kill_refuse_only_rest_of_day": 4,
+        "governor_drawdown_full_stop_awaiting_rearm": 223
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2024-06-02",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-06-07",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 12,
+      "theta_z": 11.15625,
+      "core_t": 2452,
+      "n_trades": 8,
+      "expectancy_bps": -8022.416289313332,
+      "window_equity_final": 8717.0243186016,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9630156472261735,
+      "refusals": {
+        "zero_band": 440,
+        "governor_drawdown_full_stop_awaiting_rearm": 237
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-07-04",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 13,
+      "theta_z": 9.125,
+      "core_t": 2343,
+      "n_trades": 10,
+      "expectancy_bps": -13110.860073633312,
+      "window_equity_final": 7378.0239084574605,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9544807965860598,
+      "refusals": {
+        "zero_band": 413,
+        "governor_drawdown_full_stop_awaiting_rearm": 258
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-08-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 14,
+      "theta_z": 7.5625,
+      "core_t": 2394,
+      "n_trades": 7,
+      "expectancy_bps": -8086.293182944847,
+      "window_equity_final": 8868.181548034285,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9786628733997155,
+      "refusals": {
+        "zero_band": 432,
+        "governor_drawdown_full_stop_awaiting_rearm": 256
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-09-03",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 15,
+      "theta_z": 1.5,
+      "core_t": 2353,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 453,
+        "no_inventory_short": 250
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 16,
+      "theta_z": 1.34375,
+      "core_t": 2334,
+      "n_trades": 5,
+      "expectancy_bps": -11751.367050645931,
+      "window_equity_final": 8825.328955289711,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9857752489331437,
+      "refusals": {
+        "zero_band": 374,
+        "governor_drawdown_full_stop_awaiting_rearm": 319
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-11-03",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 17,
+      "theta_z": 0.8125,
+      "core_t": 2280,
+      "n_trades": 14,
+      "expectancy_bps": -30862.17921144104,
+      "window_equity_final": 1393.9188368805571,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9559032716927454,
+      "refusals": {
+        "zero_band": 428,
+        "no_inventory_short": 54,
+        "governor_drawdown_full_stop_awaiting_rearm": 190
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-12-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 18,
+      "theta_z": 11.0625,
+      "core_t": 2405,
+      "n_trades": 31,
+      "expectancy_bps": -3879.945562875552,
+      "window_equity_final": 7607.013892057028,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8520625889046942,
+      "refusals": {
+        "zero_band": 398,
+        "governor_top_vol_percentile_regime": 6,
+        "governor_drawdown_full_stop_awaiting_rearm": 195
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-01-10",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 19,
+      "theta_z": 5.0,
+      "core_t": 2397,
+      "n_trades": 3,
+      "expectancy_bps": -26191.56775331988,
+      "window_equity_final": 8428.720389902463,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9857752489331437,
+      "refusals": {
+        "zero_band": 400,
+        "governor_drawdown_full_stop_awaiting_rearm": 293
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-02-02",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 20,
+      "theta_z": 7.65625,
+      "core_t": 2382,
+      "n_trades": 74,
+      "expectancy_bps": -556.7723139067696,
+      "window_equity_final": 9182.612265522508,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.6827880512091038,
+      "refusals": {
+        "zero_band": 471,
+        "governor_daily_kill_refuse_only_rest_of_day": 9
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2025-03-28",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 21,
+      "theta_z": 4.53125,
+      "core_t": 2348,
+      "n_trades": 6,
+      "expectancy_bps": -12933.993993186896,
+      "window_equity_final": 8448.839609949007,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9743954480796586,
+      "refusals": {
+        "zero_band": 367,
+        "governor_drawdown_full_stop_awaiting_rearm": 318
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-04-02",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 22,
+      "theta_z": 8.88125,
+      "core_t": 2437,
+      "n_trades": 43,
+      "expectancy_bps": -2375.693803731631,
+      "window_equity_final": 8063.740021799783,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8036984352773826,
+      "refusals": {
+        "zero_band": 444,
+        "governor_daily_kill_refuse_only_rest_of_day": 2,
+        "governor_top_vol_percentile_regime": 7,
+        "governor_drawdown_full_stop_awaiting_rearm": 112
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2025-05-04",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-05-18",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 23,
+      "theta_z": 2.6875,
+      "core_t": 2438,
+      "n_trades": 9,
+      "expectancy_bps": -8228.029748341502,
+      "window_equity_final": 8570.835904025022,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.972972972972973,
+      "refusals": {
+        "zero_band": 383,
+        "governor_daily_kill_refuse_only_rest_of_day": 11,
+        "governor_drawdown_full_stop_awaiting_rearm": 290
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2025-06-02",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-06-04",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 24,
+      "theta_z": 5.46875,
+      "core_t": 2379,
+      "n_trades": 36,
+      "expectancy_bps": -1632.9546383825416,
+      "window_equity_final": 8831.556156179327,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8477951635846372,
+      "refusals": {
+        "zero_band": 398,
+        "governor_top_vol_percentile_regime": 22,
+        "governor_drawdown_full_stop_awaiting_rearm": 176
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-07-14",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 25,
+      "theta_z": 4.987499999999999,
+      "core_t": 2327,
+      "n_trades": 44,
+      "expectancy_bps": -1523.9978641437565,
+      "window_equity_final": 8669.470872339709,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.786628733997155,
+      "refusals": {
+        "zero_band": 442,
+        "governor_top_vol_percentile_regime": 3,
+        "governor_drawdown_full_stop_awaiting_rearm": 108
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-08-18",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 26,
+      "theta_z": 8.8125,
+      "core_t": 2227,
+      "n_trades": 2,
+      "expectancy_bps": -36342.59883336908,
+      "window_equity_final": 8546.793441785005,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9957325746799431,
+      "refusals": {
+        "zero_band": 384,
+        "governor_drawdown_full_stop_awaiting_rearm": 316
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-09-02",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 27,
+      "theta_z": 4.05625,
+      "core_t": 2082,
+      "n_trades": 11,
+      "expectancy_bps": -8579.946028762592,
+      "window_equity_final": 8113.20199236403,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.957325746799431,
+      "refusals": {
+        "zero_band": 435,
+        "governor_drawdown_full_stop_awaiting_rearm": 238
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-10-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 28,
+      "theta_z": 2.46875,
+      "core_t": 1949,
+      "n_trades": 5,
+      "expectancy_bps": -12571.609560807856,
+      "window_equity_final": 8743.184018627462,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9772403982930299,
+      "refusals": {
+        "zero_band": 387,
+        "governor_drawdown_full_stop_awaiting_rearm": 296,
+        "no_inventory_short": 4
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-11-03",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 29,
+      "theta_z": 5.59375,
+      "core_t": 1960,
+      "n_trades": 11,
+      "expectancy_bps": -11166.764381492547,
+      "window_equity_final": 7544.100046179402,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9644381223328592,
+      "refusals": {
+        "zero_band": 446,
+        "governor_drawdown_full_stop_awaiting_rearm": 232
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-12-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 30,
+      "theta_z": 1.53125,
+      "core_t": 2049,
+      "n_trades": 38,
+      "expectancy_bps": -2954.2564323171555,
+      "window_equity_final": 7829.699551182168,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8805120910384068,
+      "refusals": {
+        "zero_band": 454,
+        "no_inventory_short": 41,
+        "governor_daily_kill_refuse_only_rest_of_day": 4,
+        "governor_top_vol_percentile_regime": 3,
+        "governor_drawdown_full_stop_awaiting_rearm": 117
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2026-01-11",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2026-01-19",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 31,
+      "theta_z": 2.0625,
+      "core_t": 2088,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 450,
+        "no_inventory_short": 253
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 32,
+      "theta_z": 1.59375,
+      "core_t": 2090,
+      "n_trades": 45,
+      "expectancy_bps": -28.04915058421274,
+      "window_equity_final": 9974.783455032295,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8079658605974396,
+      "refusals": {
+        "zero_band": 490,
+        "no_inventory_short": 78
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 2,
+      "window_idx": 33,
+      "theta_z": 1.75,
+      "core_t": 2272,
+      "n_trades": 12,
+      "expectancy_bps": -49.521906256471105,
+      "window_equity_final": 9988.120387220353,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9715504978662873,
+      "refusals": {
+        "no_inventory_short": 310,
+        "zero_band": 373
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 0,
+      "theta_z": 1.34375,
+      "core_t": 2005,
+      "n_trades": 30,
+      "expectancy_bps": -1776.2428582802584,
+      "window_equity_final": 8971.768952972969,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9046941678520626,
+      "refusals": {
+        "zero_band": 449,
+        "no_inventory_short": 113,
+        "governor_daily_kill_refuse_only_rest_of_day": 11,
+        "governor_top_vol_percentile_regime": 2,
+        "governor_drawdown_full_stop_awaiting_rearm": 61
+      },
+      "n_kills": 3,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2023-07-05",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2023-07-16",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2023-07-17",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 1,
+      "theta_z": 5.15625,
+      "core_t": 2087,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 478,
+        "no_inventory_short": 225
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 2,
+      "theta_z": 3.875,
+      "core_t": 1963,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 390,
+        "no_inventory_short": 313
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 3,
+      "theta_z": 6.90625,
+      "core_t": 1749,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 336,
+        "no_inventory_short": 367
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 4,
+      "theta_z": 10.75,
+      "core_t": 1619,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 504,
+        "no_inventory_short": 199
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 5,
+      "theta_z": 4.75,
+      "core_t": 1635,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "no_inventory_short": 264,
+        "zero_band": 439
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 6,
+      "theta_z": 3.4375,
+      "core_t": 1629,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 442,
+        "no_inventory_short": 261
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 7,
+      "theta_z": 2.0625,
+      "core_t": 1792,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "no_inventory_short": 322,
+        "zero_band": 381
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 8,
+      "theta_z": 2.09375,
+      "core_t": 2020,
+      "n_trades": 12,
+      "expectancy_bps": -9400.216539906012,
+      "window_equity_final": 7744.650958661631,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9601706970128022,
+      "refusals": {
+        "zero_band": 411,
+        "no_inventory_short": 76,
+        "governor_drawdown_full_stop_awaiting_rearm": 188
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-03-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 9,
+      "theta_z": 7.96875,
+      "core_t": 2187,
+      "n_trades": 40,
+      "expectancy_bps": -2535.8940113157987,
+      "window_equity_final": 8075.459382117347,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.844950213371266,
+      "refusals": {
+        "zero_band": 413,
+        "governor_daily_kill_refuse_only_rest_of_day": 7,
+        "governor_top_vol_percentile_regime": 14,
+        "governor_drawdown_full_stop_awaiting_rearm": 160
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2024-04-12",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-04-15",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 10,
+      "theta_z": 10.46875,
+      "core_t": 2348,
+      "n_trades": 9,
+      "expectancy_bps": -8187.025434796424,
+      "window_equity_final": 8527.020371583414,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9658605974395448,
+      "refusals": {
+        "zero_band": 447,
+        "governor_drawdown_full_stop_awaiting_rearm": 232
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-05-06",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 11,
+      "theta_z": 9.21875,
+      "core_t": 2441,
+      "n_trades": 19,
+      "expectancy_bps": -4465.034127924735,
+      "window_equity_final": 8367.032176402594,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9132290184921764,
+      "refusals": {
+        "zero_band": 415,
+        "governor_daily_kill_refuse_only_rest_of_day": 4,
+        "governor_drawdown_full_stop_awaiting_rearm": 223
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2024-06-02",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-06-07",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 12,
+      "theta_z": 11.15625,
+      "core_t": 2452,
+      "n_trades": 8,
+      "expectancy_bps": -8022.416289313332,
+      "window_equity_final": 8717.0243186016,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9630156472261735,
+      "refusals": {
+        "zero_band": 440,
+        "governor_drawdown_full_stop_awaiting_rearm": 237
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-07-04",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 13,
+      "theta_z": 9.125,
+      "core_t": 2343,
+      "n_trades": 10,
+      "expectancy_bps": -13110.860073633312,
+      "window_equity_final": 7378.0239084574605,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9544807965860598,
+      "refusals": {
+        "zero_band": 413,
+        "governor_drawdown_full_stop_awaiting_rearm": 258
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-08-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 14,
+      "theta_z": 7.5625,
+      "core_t": 2394,
+      "n_trades": 7,
+      "expectancy_bps": -8086.293182944847,
+      "window_equity_final": 8868.181548034285,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9786628733997155,
+      "refusals": {
+        "zero_band": 432,
+        "governor_drawdown_full_stop_awaiting_rearm": 256
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-09-03",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 15,
+      "theta_z": 1.5,
+      "core_t": 2353,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 453,
+        "no_inventory_short": 250
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 16,
+      "theta_z": 1.34375,
+      "core_t": 2334,
+      "n_trades": 5,
+      "expectancy_bps": -11751.367050645931,
+      "window_equity_final": 8825.328955289711,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9857752489331437,
+      "refusals": {
+        "zero_band": 374,
+        "governor_drawdown_full_stop_awaiting_rearm": 319
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-11-03",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 17,
+      "theta_z": 0.8125,
+      "core_t": 2280,
+      "n_trades": 14,
+      "expectancy_bps": -30862.17921144104,
+      "window_equity_final": 1393.9188368805571,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9559032716927454,
+      "refusals": {
+        "zero_band": 428,
+        "no_inventory_short": 54,
+        "governor_drawdown_full_stop_awaiting_rearm": 190
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2024-12-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 18,
+      "theta_z": 11.0625,
+      "core_t": 2405,
+      "n_trades": 31,
+      "expectancy_bps": -3879.945562875552,
+      "window_equity_final": 7607.013892057028,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8520625889046942,
+      "refusals": {
+        "zero_band": 398,
+        "governor_top_vol_percentile_regime": 6,
+        "governor_drawdown_full_stop_awaiting_rearm": 195
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-01-10",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 19,
+      "theta_z": 5.0,
+      "core_t": 2397,
+      "n_trades": 3,
+      "expectancy_bps": -26191.56775331988,
+      "window_equity_final": 8428.720389902463,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9857752489331437,
+      "refusals": {
+        "zero_band": 400,
+        "governor_drawdown_full_stop_awaiting_rearm": 293
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-02-02",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 20,
+      "theta_z": 7.65625,
+      "core_t": 2382,
+      "n_trades": 74,
+      "expectancy_bps": -556.7723139067696,
+      "window_equity_final": 9182.612265522508,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.6827880512091038,
+      "refusals": {
+        "zero_band": 471,
+        "governor_daily_kill_refuse_only_rest_of_day": 9
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2025-03-28",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 21,
+      "theta_z": 4.53125,
+      "core_t": 2348,
+      "n_trades": 6,
+      "expectancy_bps": -12933.993993186896,
+      "window_equity_final": 8448.839609949007,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9743954480796586,
+      "refusals": {
+        "zero_band": 367,
+        "governor_drawdown_full_stop_awaiting_rearm": 318
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-04-02",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 22,
+      "theta_z": 8.88125,
+      "core_t": 2437,
+      "n_trades": 43,
+      "expectancy_bps": -2375.693803731631,
+      "window_equity_final": 8063.740021799783,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8036984352773826,
+      "refusals": {
+        "zero_band": 444,
+        "governor_daily_kill_refuse_only_rest_of_day": 2,
+        "governor_top_vol_percentile_regime": 7,
+        "governor_drawdown_full_stop_awaiting_rearm": 112
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2025-05-04",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-05-18",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 23,
+      "theta_z": 2.6875,
+      "core_t": 2438,
+      "n_trades": 9,
+      "expectancy_bps": -8228.029748341502,
+      "window_equity_final": 8570.835904025022,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.972972972972973,
+      "refusals": {
+        "zero_band": 383,
+        "governor_daily_kill_refuse_only_rest_of_day": 11,
+        "governor_drawdown_full_stop_awaiting_rearm": 290
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2025-06-02",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-06-04",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 24,
+      "theta_z": 5.46875,
+      "core_t": 2379,
+      "n_trades": 36,
+      "expectancy_bps": -1632.9546383825416,
+      "window_equity_final": 8831.556156179327,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8477951635846372,
+      "refusals": {
+        "zero_band": 398,
+        "governor_top_vol_percentile_regime": 22,
+        "governor_drawdown_full_stop_awaiting_rearm": 176
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-07-14",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 25,
+      "theta_z": 4.987499999999999,
+      "core_t": 2327,
+      "n_trades": 44,
+      "expectancy_bps": -1523.9978641437565,
+      "window_equity_final": 8669.470872339709,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.786628733997155,
+      "refusals": {
+        "zero_band": 442,
+        "governor_top_vol_percentile_regime": 3,
+        "governor_drawdown_full_stop_awaiting_rearm": 108
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-08-18",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 26,
+      "theta_z": 8.8125,
+      "core_t": 2227,
+      "n_trades": 2,
+      "expectancy_bps": -36342.59883336908,
+      "window_equity_final": 8546.793441785005,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9957325746799431,
+      "refusals": {
+        "zero_band": 384,
+        "governor_drawdown_full_stop_awaiting_rearm": 316
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-09-02",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 27,
+      "theta_z": 4.05625,
+      "core_t": 2082,
+      "n_trades": 11,
+      "expectancy_bps": -8579.946028762592,
+      "window_equity_final": 8113.20199236403,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.957325746799431,
+      "refusals": {
+        "zero_band": 435,
+        "governor_drawdown_full_stop_awaiting_rearm": 238
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-10-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 28,
+      "theta_z": 2.46875,
+      "core_t": 1949,
+      "n_trades": 5,
+      "expectancy_bps": -12571.609560807856,
+      "window_equity_final": 8743.184018627462,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9772403982930299,
+      "refusals": {
+        "zero_band": 387,
+        "governor_drawdown_full_stop_awaiting_rearm": 296,
+        "no_inventory_short": 4
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-11-03",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 29,
+      "theta_z": 5.59375,
+      "core_t": 1960,
+      "n_trades": 11,
+      "expectancy_bps": -11166.764381492547,
+      "window_equity_final": 7544.100046179402,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9644381223328592,
+      "refusals": {
+        "zero_band": 446,
+        "governor_drawdown_full_stop_awaiting_rearm": 232
+      },
+      "n_kills": 1,
+      "kill_events": [
+        {
+          "event": "drawdown_full_stop",
+          "day": "2025-12-05",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 30,
+      "theta_z": 1.53125,
+      "core_t": 2049,
+      "n_trades": 38,
+      "expectancy_bps": -2954.2564323171555,
+      "window_equity_final": 7829.699551182168,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8805120910384068,
+      "refusals": {
+        "zero_band": 454,
+        "no_inventory_short": 41,
+        "governor_daily_kill_refuse_only_rest_of_day": 4,
+        "governor_top_vol_percentile_regime": 3,
+        "governor_drawdown_full_stop_awaiting_rearm": 117
+      },
+      "n_kills": 2,
+      "kill_events": [
+        {
+          "event": "daily_kill_refuse_only",
+          "day": "2026-01-11",
+          "cause": "daily realized loss <= -1% (rule 3)"
+        },
+        {
+          "event": "drawdown_full_stop",
+          "day": "2026-01-19",
+          "cause": "equity <= 90% of peak (rule 4)"
+        }
+      ],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 31,
+      "theta_z": 2.0625,
+      "core_t": 2088,
+      "n_trades": 0,
+      "expectancy_bps": 0.0,
+      "window_equity_final": 10000.0,
+      "window_equity_start": 10000.0,
+      "refuse_share": 1.0,
+      "refusals": {
+        "zero_band": 450,
+        "no_inventory_short": 253
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 32,
+      "theta_z": 1.59375,
+      "core_t": 2090,
+      "n_trades": 45,
+      "expectancy_bps": -28.04915058421274,
+      "window_equity_final": 9974.783455032295,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.8079658605974396,
+      "refusals": {
+        "zero_band": 490,
+        "no_inventory_short": 78
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    },
+    {
+      "seed": 3,
+      "window_idx": 33,
+      "theta_z": 1.75,
+      "core_t": 2272,
+      "n_trades": 12,
+      "expectancy_bps": -49.521906256471105,
+      "window_equity_final": 9988.120387220353,
+      "window_equity_start": 10000.0,
+      "refuse_share": 0.9715504978662873,
+      "refusals": {
+        "no_inventory_short": 310,
+        "zero_band": 373
+      },
+      "n_kills": 0,
+      "kill_events": [],
+      "recon_sum_vs_trades": "0",
+      "recon_equity_vs_sum": "0",
+      "n_decisions": 703
+    }
+  ],
+  "aggregated": {
+    "expectancy_bps": {
+      "mean": -6682.742080931768,
+      "min": -36342.59883336908,
+      "max": 0.0
+    },
+    "refuse_share": {
+      "mean": 0.9378713078403481,
+      "min": 0.6827880512091038,
+      "max": 1.0
+    },
+    "n_trades": {
+      "total": 1572,
+      "mean_per_window": 15.411764705882353
+    },
+    "n_kills": {
+      "total": 90
+    }
+  },
+  "mutations": {
+    "mutation_a_poisoned": {
+      "refuse_share_clean": 0.6371428571428571,
+      "refuse_share_poisoned": 0.02142857142857143,
+      "collapse_to_refusals": false
+    },
+    "mutation_b_lookahead": {
+      "causal_violations": 0,
+      "future_violations": 20,
+      "fires": true
+    },
+    "mutation_c_cost_off": {
+      "expectancy_bps_cost_on": -1776.2428582802584,
+      "expectancy_bps_cost_off": -1.9579489753305526,
+      "degrades_with_cost": true
+    }
+  },
+  "a_bars": {
+    "A-1_no_lookahead": "PASS (audit 0 violations causal; mutation (b) fires)",
+    "A-2_refuse_band": "PASS",
+    "A-3_recon": "PASS",
+    "A-4_risk_caps": "PASS",
+    "A-5_expectancy": "FAIL",
+    "A-6_regime_switches": "PASS (refusals published per window)",
+    "A-7_mutations": "PASS",
+    "A-8_reproducibility": "PASS (manifest sha stable, no network I/O)"
+  },
+  "elapsed_s": 66.07,
+  "ledger_key": "kestrel_beds.L1.R1"
+}

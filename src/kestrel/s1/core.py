@@ -80,40 +80,27 @@ class S1Core:
                 self.refused_updates += 1
         self.t += 1
 
-    def _extract(self):
-        ev = [self.c[0][i] - self.c[1][i] for i in range(N_LIT)]
-        ordered = sorted(range(N_LIT), key=lambda i: (-ev[i], i))
-        rule = sorted(ordered[:ARITY])
-        return rule, ev, ordered
-
     def is_confident(self):
-        rule, ev, ordered = self._extract()
+        # R1: confidence gate is t >= E_MIN only (scoring doesn't need a
+        # single conjunction). E_LIT/SEP_MIN retained for traceability.
         if self.t < E_MIN:
-            return False, rule, ev, ordered
-        if min(ev[i] for i in rule) < E_LIT:
-            return False, rule, ev, ordered
-        if len(ordered) <= ARITY:
-            return False, rule, ev, ordered
-        if (ev[ordered[ARITY - 1]] - ev[ordered[ARITY]]) < SEP_MIN:
-            return False, rule, ev, ordered
-        return True, rule, ev, ordered
+            return False, [], [], []
+        return True, [], [], []
 
     def predict(self, x: List[int]) -> Tuple[Optional[int], float]:
         assert len(x) == N_BITS
-        confident, rule, ev, ordered = self.is_confident()
-        min_ev = min(ev[i] for i in rule) if rule else 0
-        sep = (ev[ordered[ARITY - 1]] - ev[ordered[ARITY]]
-               if (len(ordered) > ARITY) else 0)
+        confident = self.t >= E_MIN
         if not confident:
-            z = min(min_ev / max(E_LIT, 1), sep / max(SEP_MIN, 1))
-            return None, float(z)
-        active = set(sat_lits(x))
-        m = sum(1 for lit in rule if lit in active)
-        # per-cell confidence: fraction of the rule's literals satisfied
-        z = m / ARITY
-        if m == ARITY:
+            return None, 0.0
+        active = sat_lits(x)
+        score = sum(self.c[0][lit] - self.c[1][lit] for lit in active)
+        # z: normalized magnitude (per-cell, continuous)
+        z = abs(score) / max(E_LIT * N_LIT, 1)
+        if score > 0:
             return 1, float(z)
-        return -1, float(z)
+        if score < 0:
+            return -1, float(z)
+        return None, 0.0
 
     def emit(self, x: List[int], theta_z: float) -> Tuple[int, float]:
         cls, z = self.predict(x)
